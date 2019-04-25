@@ -26,8 +26,6 @@ assignment is entirely my own work, with exceptions given below.
 I _insert name 2_ declare that everything I have submitted in this
 assignment is entirely my own work, with exceptions given below.
 
-I _insert name 3_ declare that everything I have submitted in this
-assignment is entirely my own work, with exceptions given below.
 
 ### Inspiration
 
