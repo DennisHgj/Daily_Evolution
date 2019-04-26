@@ -2,7 +2,8 @@
 
 ## Team structure and roles 
 + Guanjie Huang u6532079 - team leader, main coder
-+ Yuelin Wong u6767127 - note taker, documentation checker, user input, coder
++ Lingyu Xia u6483756 - coder,tester
++ Chao Zhang u6545192 - note taker, documentation checker, user input, coder
 
 ## App Overview 
 
