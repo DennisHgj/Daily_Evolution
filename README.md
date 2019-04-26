@@ -24,9 +24,11 @@ _Add a paragraph the gives a summary of the app you implemented. Include a small
 I Guanjie Huang declare that everything I have submitted in this
 assignment is entirely my own work, with exceptions given below.
 
-I _insert name 2_ declare that everything I have submitted in this
+I Chao Zhang declare that everything I have submitted in this
 assignment is entirely my own work, with exceptions given below.
 
+I Lingyu Xia declare that everything I have submitted in this
+assignment is entirely my own work, with exceptions given below.
 
 ### Inspiration
 
