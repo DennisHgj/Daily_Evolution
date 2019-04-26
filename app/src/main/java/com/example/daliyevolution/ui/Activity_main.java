@@ -10,6 +10,9 @@ import android.widget.RadioGroup;
 import com.example.daliyevolution.R;
 import com.example.daliyevolution.base.BaseFragActivity;
 import com.example.daliyevolution.base.BaseFragment;
+import com.example.daliyevolution.fragment.Fragement_transaction;
+import com.example.daliyevolution.fragment.Fragment_home;
+import com.example.daliyevolution.fragment.Fragment_notebook;
 import com.example.daliyevolution.fragment.Fragment_time;
 
 import org.xutils.view.annotation.ContentView;
@@ -39,12 +42,15 @@ public class Activity_main extends BaseFragActivity {
 
     private void initFragment(){
         fragment_list=new ArrayList<>();
+        fragment_list.add(new Fragment_home());
         fragment_list.add(new Fragment_time());
+        fragment_list.add(new Fragment_notebook());
+        fragment_list.add(new Fragement_transaction());
     }
 
     private void setListener() {
         myradiogroup.setOnCheckedChangeListener(new myOnCheckedChangeListener());
-        myradiogroup.check(R.id.navigation_home);
+        myradiogroup.check(R.id.bt_home);
     }
 
     class myOnCheckedChangeListener implements RadioGroup.OnCheckedChangeListener {
@@ -52,14 +58,19 @@ public class Activity_main extends BaseFragActivity {
         @Override
         public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
             switch (checkedId) {
-                case R.id.navigation_home:
+                case R.id.bt_home:
                     position = 0;
                     break;
-                case R.id.navigation_dashboard:
+                case R.id.bt_time:
                     position=1;
                     break;
-                case R.id.navigation_notifications:
+                case R.id.bt_read:
                     position=2;
+                    break;
+                case R.id.bt_money:
+                    position=3;
+                    break;
+                default:
                     break;
             }
             BaseFragment to = getFragment();

@@ -9,11 +9,11 @@ import android.view.ViewGroup;
 import com.example.daliyevolution.R;
 import com.example.daliyevolution.base.BaseFragment;
 
-public class Fragment_time extends BaseFragment {
+public class Fragment_notebook extends BaseFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_alarm, container, false);
+        View view = inflater.inflate(R.layout.fragment_notebook, container, false);
 
         return view;
     }
