@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/message"
-        android:layout_width="wrap_content"
+    <!--title-->
+    <!--<include layout="@layout/titlebar"></include>-->
+
+    <!--FragLayout-->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+    <!--bottom RadioGrop-->
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:padding="5dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:text="@string/title_home"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal">
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        <RadioButton
+            android:id="@+id/bt_home"
+            android:text="Home"
+            android:drawableTop="@drawable/ic_home_black_24dp"
+            style="@style/bottom_tag_style"/>
 
-</android.support.constraint.ConstraintLayout>
+        <RadioButton
+            android:id="@+id/bt_time"
+            android:text="Alarm"
+            android:drawableTop="@drawable/bt_time_drawable_selector"
+            style="@style/bottom_tag_style"/>
+        <RadioButton
+            android:id="@+id/bt_read"
+            android:text="NoteBook"
+            android:drawableTop="@drawable/bt_read_drawable_selector"
+            style="@style/bottom_tag_style"/>
+        <RadioButton
+            android:id="@+id/bt_money"
+            android:text="transaction"
+            android:drawableTop="@drawable/bt_money_drawable_selector"
+            style="@style/bottom_tag_style"/>
+
+    </RadioGroup>
+
+</LinearLayout>

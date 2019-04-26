@@ -3,4 +3,39 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="lightgreen">#7cd12e</color>
+    <color name="black">#ff000000</color>
+    <color name="gray">#ff888888</color>
+    <color name="red">#ffff0000</color>
+
+    <color name="index_color">#1296db</color>
+    <color name="index">#333333</color>
+    <color name="orange_yellow">#fd9c06</color>
+
+    <color name="read_color">#54B0E9</color>
+    <color name="read_normal">#bebebe</color>
+
+    <color name="read_diary">#FCF2E4</color>
+
+    <color name="colorPrimaryLight">#90CAF9</color>
+    <color name="nightColorPrimary">#555555</color>
+    <color name="nightColorPrimaryDark">#424242</color>
+    <color name="nightColorPrimaryLight">#757575</color>
+    <color name="pure_white">#FFFFFF</color>
+    <color name="dayModeBackgroundColor">#FCECDF</color>
+    <color name="dayModeTextColor">#424242</color>
+    <color name="nightModeBackgroundColor">#424242</color>
+    <color name="nightModeTextColor">#E0E0E0</color>
+
+    <color name="uvv_green">#ff50b100</color>
+    <color name="uvv_black">#ff000000</color>
+    <color name="uvv_light_gray">#ffF0F0F0</color>
+    <color name="uvv_gray">#ffbbbbbb</color>
+
+
+
+
+
 </resources>
