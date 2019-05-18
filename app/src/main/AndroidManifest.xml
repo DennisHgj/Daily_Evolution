@@ -4,13 +4,14 @@
     <!--permit network-->
     <uses-permission android:name="android.permission.INTERNET" />
     <!--permit get network status-->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
 
     <!-- SDcard storage -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <!--get phone_states -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <application
@@ -37,7 +38,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.Activity_main"
+        <activity
+            android:name=".ui.Activity_main"
             android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.ui.Activity_main" />
@@ -45,8 +47,15 @@
             </intent-filter>
         </activity>
 
-
-
+        <activity
+            android:name=".ui.Activity_transaction_additem"
+            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
+        <activity
+            android:name=".ui.Activity_transaction_type"
+            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
+        <activity
+            android:name=".ui.Activity_transaction_edititem"
+            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
 
 
     </application>

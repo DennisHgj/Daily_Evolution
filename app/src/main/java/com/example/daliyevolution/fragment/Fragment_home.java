@@ -9,6 +9,12 @@ import android.view.ViewGroup;
 import com.example.daliyevolution.R;
 import com.example.daliyevolution.base.BaseFragment;
 
+/***
+ * Fragment_home
+ * home fragment
+ * @author Guanjie Huang(initial build)
+ * @ID u6532079
+ */
 public class Fragment_home extends BaseFragment {
     @Nullable
     @Override

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--fragment_alarm
+@author Guanjie Huang
+@ID u6532079-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -13,16 +17,56 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/af1"
-            android:layout_width="match_parent"
+            android:id="@+id/textview_edit"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="alarm_fragment" />
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:text="clear"
+            android:textColor="@color/index_color"
+            android:textSize="18sp" />
 
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/seg_workorweek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_margin="27dp"
+            android:orientation="horizontal">
 
+            <RadioButton
+                android:id="@+id/bt_work"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Weekday"
+                style="@style/RadioButton" />
+            <RadioButton
+                android:id="@+id/bt_week"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Weekend"
+                style="@style/RadioButton" />
 
+        </info.hoang8f.android.segmented.SegmentedGroup>
 
-
+        <ImageButton
+            android:id="@+id/bt_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/add" />
     </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
 
 
 </LinearLayout>

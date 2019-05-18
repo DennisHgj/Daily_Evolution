@@ -12,6 +12,12 @@ import com.example.daliyevolution.base.BaseActivity;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
 
+/***
+ * Activity_Launch
+ * build welcome page
+ * @author Guanjie Huang
+ * @ID u6532079
+ */
 @ContentView(R.layout.activity_launch)
 public class Activity_Launch extends BaseActivity {
     @ViewInject(R.id.iv_icon)

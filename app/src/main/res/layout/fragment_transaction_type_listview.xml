@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--fragment_transaction_type_listview
+@author Guanjie Huang
+@ID u6532079-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/type_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18th"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/type_label"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="food"
+        android:textSize="18sp"
+        android:ellipsize="end"
+        android:maxEms="10"
+        android:maxLines="1"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/type_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-20.0"
+        android:textSize="18sp"/>
+
+</LinearLayout>

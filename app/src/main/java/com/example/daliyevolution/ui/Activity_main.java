@@ -10,7 +10,7 @@ import android.widget.RadioGroup;
 import com.example.daliyevolution.R;
 import com.example.daliyevolution.base.BaseFragActivity;
 import com.example.daliyevolution.base.BaseFragment;
-import com.example.daliyevolution.fragment.Fragement_transaction;
+import com.example.daliyevolution.fragment.Fragment_transaction;
 import com.example.daliyevolution.fragment.Fragment_home;
 import com.example.daliyevolution.fragment.Fragment_notebook;
 import com.example.daliyevolution.fragment.Fragment_time;
@@ -21,6 +21,12 @@ import org.xutils.view.annotation.ViewInject;
 import java.util.ArrayList;
 import java.util.List;
 
+/***
+ * Activity_main
+ * main activity, used to implement fragment transfer
+ * @author Guanjie Huang
+ * @ID u6532079
+ */
 @ContentView(R.layout.activity_main)
 public class Activity_main extends BaseFragActivity {
     @ViewInject(R.id.rg_main)
@@ -32,7 +38,6 @@ public class Activity_main extends BaseFragActivity {
     //private List<BaseFragment> rgList;
 
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,12 +45,12 @@ public class Activity_main extends BaseFragActivity {
         setListener();
     }
 
-    private void initFragment(){
-        fragment_list=new ArrayList<>();
+    private void initFragment() {
+        fragment_list = new ArrayList<>();
         fragment_list.add(new Fragment_home());
         fragment_list.add(new Fragment_time());
         fragment_list.add(new Fragment_notebook());
-        fragment_list.add(new Fragement_transaction());
+        fragment_list.add(new Fragment_transaction());
     }
 
     private void setListener() {
@@ -62,48 +67,48 @@ public class Activity_main extends BaseFragActivity {
                     position = 0;
                     break;
                 case R.id.bt_time:
-                    position=1;
+                    position = 1;
                     break;
                 case R.id.bt_read:
-                    position=2;
+                    position = 2;
                     break;
                 case R.id.bt_money:
-                    position=3;
+                    position = 3;
                     break;
                 default:
                     break;
             }
             BaseFragment to = getFragment();
 
-            switchFragment(mContent,to);
+            switchFragment(mContent, to);
         }
     }
 
-    private BaseFragment getFragment(){
+    private BaseFragment getFragment() {
         BaseFragment fragment = fragment_list.get(position);
         return fragment;
     }
 
-    private void switchFragment(Fragment from, Fragment to){
-        if(from!=to){
+    private void switchFragment(Fragment from, Fragment to) {
+        if (from != to) {
             mContent = to;
 
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             //Determine if it has been added
-            if(!mContent.isAdded()){
+            if (!mContent.isAdded()) {
                 //To is not added: hide from, add to
-                if(from!=null){
+                if (from != null) {
                     transaction.hide(from);
                 }
-                if(to!=null){
-                    transaction.add(R.id.fl_content,to).commit();
+                if (to != null) {
+                    transaction.add(R.id.fl_content, to).commit();
                 }
-            }else{
+            } else {
                 //To has been added: hide from, display to
-                if(from!=null){
+                if (from != null) {
                     transaction.hide(from);
                 }
-                if(to!=null){
+                if (to != null) {
                     transaction.show(to).commit();
                 }
             }

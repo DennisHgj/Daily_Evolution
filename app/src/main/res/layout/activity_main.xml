@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+
+<!--activity_main
+@author Guanjie Huang
+@ID u6532079-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <!--title-->
     <!--<include layout="@layout/titlebar"></include>-->
@@ -11,10 +14,9 @@
     <!--FragLayout-->
     <FrameLayout
         android:id="@+id/fl_content"
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
-    </FrameLayout>
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
 
     <ImageView
         android:layout_width="match_parent"
@@ -23,34 +25,36 @@
     <!--bottom RadioGrop-->
     <RadioGroup
         android:id="@+id/rg_main"
-        android:padding="5dp"
-        android:layout_gravity="center_vertical"
-        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dp">
 
         <RadioButton
             android:id="@+id/bt_home"
-            android:text="Home"
+            style="@style/bottom_tag_style"
             android:drawableTop="@drawable/ic_home_black_24dp"
-            style="@style/bottom_tag_style"/>
+            android:text="Home" />
 
         <RadioButton
             android:id="@+id/bt_time"
-            android:text="Alarm"
+            style="@style/bottom_tag_style"
             android:drawableTop="@drawable/bt_time_drawable_selector"
-            style="@style/bottom_tag_style"/>
+            android:text="Alarm" />
+
         <RadioButton
             android:id="@+id/bt_read"
-            android:text="NoteBook"
+            style="@style/bottom_tag_style"
             android:drawableTop="@drawable/bt_read_drawable_selector"
-            style="@style/bottom_tag_style"/>
+            android:text="NoteBook" />
+
         <RadioButton
             android:id="@+id/bt_money"
-            android:text="transaction"
+            style="@style/bottom_tag_style"
             android:drawableTop="@drawable/bt_money_drawable_selector"
-            style="@style/bottom_tag_style"/>
+            android:text="transaction" />
 
     </RadioGroup>
 

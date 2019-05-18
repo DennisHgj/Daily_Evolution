@@ -4,7 +4,12 @@ import android.app.Application;
 import android.content.Context;
 
 import org.xutils.x;
-
+/***
+ * MyApp
+ * define APP
+ * @author Guanjie Huang
+ * @ID u6532079
+ */
 public class MyApp extends Application {
     private static Context mContext;
 

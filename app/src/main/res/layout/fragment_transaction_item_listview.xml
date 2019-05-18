@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--fragment_item_listview
+@author Guanjie Huang
+@ID u6532079-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp">
+    <TextView
+        android:id="@+id/money_item_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="buy a computer"
+        android:textSize="20sp"
+        android:ellipsize="end"
+        android:maxEms="6"
+        android:maxLines="1"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/money_item_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1500.00"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
