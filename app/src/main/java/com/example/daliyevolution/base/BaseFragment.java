@@ -10,6 +10,14 @@ import android.view.ViewGroup;
 
 import org.xutils.x;
 
+
+/***
+ * BaseFragment
+ * Define the basic function for fragments
+ * @author Guanjie Huang
+ * @ID u6532079
+ */
+
 public class BaseFragment extends Fragment {
     protected Context context;
 
@@ -22,7 +30,7 @@ public class BaseFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        return x.view().inject(this,inflater,container);
+        return x.view().inject(this, inflater, container);
     }
 
     @Override
@@ -32,7 +40,7 @@ public class BaseFragment extends Fragment {
     }
 
     //When the subclass needs to initialize the data or want to network the request to bind the data, the display data, etc. can override the method.
-    protected  void initData(){
+    protected void initData() {
 
     }
 }

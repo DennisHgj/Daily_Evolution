@@ -6,6 +6,13 @@ import android.support.v4.app.FragmentActivity;
 
 import org.xutils.x;
 
+/***
+ * BaseFragActivity
+ * define the basic activity for Fragments
+ * @author Guanjie Huang
+ * @ID u6532079
+ */
+
 public class BaseFragActivity extends FragmentActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
