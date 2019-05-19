@@ -2,30 +2,56 @@
 <!--fragment_notebook
 @author Guanjie Huang
 @ID u6532079-->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:orientation="horizontal">
+        android:background="@color/colorPrimary">
 
         <TextView
-            android:id="@+id/nf1"
-            android:layout_width="match_parent"
+            android:id="@+id/diary_add"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="notebook_fragment" />
+            android:layout_margin="10dp"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Notebook"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
-
-
-
+        <TextView
+            android:id="@+id/diary_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="clear"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
     </LinearLayout>
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+    <ListView
+        android:id="@+id/diary_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
 
 </LinearLayout>

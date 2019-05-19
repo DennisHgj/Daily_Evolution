@@ -154,7 +154,7 @@
             android:inputType="textMultiLine"
             android:maxLength="50"
             android:padding="10dp"
-            android:text="Issue" />
+            android:hint="Issue" />
     </LinearLayout>
 
     <Button
