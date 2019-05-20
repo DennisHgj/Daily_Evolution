@@ -27,8 +27,8 @@ public class AlarmActivity extends AppCompatActivity {
     private AlarmManager alarm = null;
     private Button set = null;
     private TimePicker time = null;
-    private int hourOfDay = 0 ;
-    private int minute = 0;
+    private int hourOfDay = 0 ; // store the hour of alarm we choose
+    private int minute = 0; // store the minute of alarm we choose
     private Calendar calendar = Calendar.getInstance();
     private DbManager.DaoConfig daoConfig = Db_config.getDaoConfig();
     private DbManager db = x.getDb(daoConfig);
@@ -78,9 +78,9 @@ public class AlarmActivity extends AppCompatActivity {
                         AlarmActivity.this, 0, intent,
                         PendingIntent.FLAG_UPDATE_CURRENT);
                 AlarmActivity.this.alarm.setRepeating(AlarmManager.RTC_WAKEUP,
-                        AlarmActivity.this.calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, sender);//set the alarm clock
+                        AlarmActivity.this.calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, sender);//activate the alarm clock when time is up
                 //jump to the fragment_time after adding a new alarm successfully
-                Intent intent1 = new Intent(AlarmActivity.this, Activity_main.class);
+                Intent intent1 = new Intent(AlarmActivity.this, Activity_main.class);// jump to a new activity after set an alarm clock
                 intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent1);
 

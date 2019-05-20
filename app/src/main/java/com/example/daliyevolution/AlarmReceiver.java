@@ -8,7 +8,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-
+            // jump to the activity which shows alert message when receiving the broadcast
             Intent intent1 = new Intent(context, AlarmMessage.class);
             intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intent1);

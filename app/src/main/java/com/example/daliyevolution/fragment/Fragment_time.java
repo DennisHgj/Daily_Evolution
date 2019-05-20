@@ -28,7 +28,7 @@ public class Fragment_time extends BaseFragment {
     private DbManager.DaoConfig daoConfig = Db_config.getDaoConfig();
     private DbManager db = x.getDb(daoConfig);
     private ListView alarm_list;
-    private ArrayList<int[]> al = new ArrayList<>();
+    private ArrayList<int[]> al = new ArrayList<>();// store the info of alarm from the database
     int hour_of_day;
     int minute;
     int id;
@@ -40,6 +40,7 @@ public class Fragment_time extends BaseFragment {
         try {
             String sql = "select * from Tb_alarm";
             Cursor cursor = db.execQuery(sql);
+            // find and store all alarm from the database
             if(cursor.moveToFirst()){
                 while(cursor.moveToNext()){
                     id=cursor.getInt(0);

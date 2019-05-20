@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 public class AlarmBaseAdapter extends BaseAdapter {
 
-    private ArrayList<int[]> data;
+    private ArrayList<int[]> data; // store the info of alarm from the database
     private Context mContext;
     private DbManager.DaoConfig daoConfig = Db_config.getDaoConfig();
     private DbManager db = x.getDb(daoConfig);
@@ -52,8 +52,9 @@ public class AlarmBaseAdapter extends BaseAdapter {
         View vi = inflater.inflate(R.layout.fragment_alarm_item,null);
         TextView al_id = (TextView) vi.findViewById(R.id.alarm_id);
         TextView alarm_info = (TextView) vi.findViewById(R.id.alarm_info);
-        al_id.setText(String.valueOf(data.get(position)[0]));
+        al_id.setText(String.valueOf(data.get(position)[0])); // the id of a specific alarm, the textview is hidden
         if (data.get(position)[2] < 10){
+            // make the alarm in right format if the minute is less than 10
             alarm_info.setText("    " + data.get(position)[1] + " : 0" + data.get(position)[2]);
         }else {
             alarm_info.setText("    " + data.get(position)[1] + " : " + data.get(position)[2]);
