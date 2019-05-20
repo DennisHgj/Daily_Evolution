@@ -71,12 +71,15 @@
         <receiver
             android:name=".AlarmReceiver"
             android:enabled="true"
-            android:process=":remote">
+            android:process=":remote"
+            android:exported="true">
             <intent-filter>
-                <action android:name="org.alarm.action.setalarm" />
+                <action android:name="setalarm" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="deleteAlarm" />
             </intent-filter>
         </receiver>
-
 
     </application>
 

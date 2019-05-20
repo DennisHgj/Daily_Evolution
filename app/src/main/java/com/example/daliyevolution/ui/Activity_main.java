@@ -1,5 +1,7 @@
 package com.example.daliyevolution.ui;
 
+import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
@@ -7,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.widget.RadioGroup;
 
+import com.example.daliyevolution.MainActivity;
 import com.example.daliyevolution.R;
 import com.example.daliyevolution.base.BaseFragActivity;
 import com.example.daliyevolution.base.BaseFragment;
@@ -43,6 +46,14 @@ public class Activity_main extends BaseFragActivity {
         super.onCreate(savedInstanceState);
         initFragment();
         setListener();
+
+        int id = getIntent().getIntExtra( "id" , 0);
+        if (id == 1) {
+            mContent = new Fragment_time();
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.fl_content, mContent);
+            transaction.show(mContent).commit();
+        }
     }
 
     private void initFragment() {
@@ -115,4 +126,17 @@ public class Activity_main extends BaseFragActivity {
         }
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        System.out.println("6666666" + requestCode + "66666" + resultCode);
+        if (requestCode == 1) {
+            mContent = new Fragment_time();
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.fl_content, mContent);
+            transaction.show(mContent).commit();
+        }
+    }
 }
+
+
