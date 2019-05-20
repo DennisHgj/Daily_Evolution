@@ -34,7 +34,7 @@ import org.xutils.x;
 
 
 /***
- * Activity_transaction_add
+ * Activity_transaction_additem
  * add transaction activity
  * @author Guanjie Huang
  * @ID u6532079

@@ -24,7 +24,7 @@ import java.util.List;
 
 /***
  * Adapter_transaction
- * use to set adapter for ListView
+ * use to set adapter for transaction ListView
  * @author Guanjie Huang
  * @ID u6532079
  */

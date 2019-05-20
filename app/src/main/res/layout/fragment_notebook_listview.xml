@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--fragment_notebook_listview
+@author Guanjie Huang
+@ID u6532079-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/diary_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:ellipsize="end"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:text="Label"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/diary_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="2019-5-19"
+        android:textSize="18sp" />
+
+</LinearLayout>
