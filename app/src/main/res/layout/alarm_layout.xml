@@ -8,19 +8,9 @@
         android:id="@+id/time"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/msg"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="There is no alarm now" />
     <Button
         android:id="@+id/set"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="add" />
-    <Button
-        android:id="@+id/delete"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="delet" />
 </LinearLayout>
