@@ -1,6 +1,5 @@
 package com.example.daliyevolution;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -9,7 +8,13 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.daliyevolution.ui.Activity_main;
 
-
+/***
+ * AlarmMessage
+ * show the alert dialog when time matches the alarm
+ * @author Lingyu Xia
+ *
+ * @ID u6483756
+ */
 public class AlarmMessage extends AppCompatActivity {
 
     @Override

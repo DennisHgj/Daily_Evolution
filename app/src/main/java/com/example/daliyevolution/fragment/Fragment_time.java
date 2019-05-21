@@ -2,7 +2,6 @@ package com.example.daliyevolution.fragment;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
-import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
@@ -30,7 +29,14 @@ import java.util.Calendar;
 
 import static android.content.Context.ALARM_SERVICE;
 
-
+/***
+ * Fragment_time
+ * show all the alarm that is stored in the database
+ * access to add a new alarm
+ * @author Lingyu Xia
+ *
+ * @ID u6483756
+ */
 public class Fragment_time extends BaseFragment {
     private Calendar calendar = Calendar.getInstance();
     private TextView tx;
@@ -66,7 +72,7 @@ public class Fragment_time extends BaseFragment {
                     calendar.set(Calendar.MILLISECOND, 0) ;
 
                     Intent intent = new Intent(getContext(), AlarmReceiver.class);
-                    intent.setAction("setalarm");
+                    intent.setAction("setalarm");// set the action for brosadcast
                     intent.setData(Uri.parse("content://calendar/calendar_alerts/1" + id));
 
                     PendingIntent sender = PendingIntent.getBroadcast(

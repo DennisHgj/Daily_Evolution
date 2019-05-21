@@ -5,6 +5,14 @@ import org.xutils.db.annotation.Table;
 
 import java.io.Serializable;
 
+/***
+ * tb_alarm
+ * design the table part for store alarm data
+ * @author Lingyu Xia
+ *
+ * @ID u6483756
+ */
+
 @Table(name = "Tb_alarm")
 public class Tb_alarm implements Serializable {
     @Column(name = "id", isId = true, autoGen = true)
