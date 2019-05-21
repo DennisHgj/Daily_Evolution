@@ -12,7 +12,6 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.example.daliyevolution.R;
-import com.example.daliyevolution.fragment.Fragment_time;
 import com.example.daliyevolution.util.Db_config;
 
 import org.xutils.DbManager;
@@ -21,6 +20,15 @@ import org.xutils.x;
 import java.util.ArrayList;
 
 import static android.content.Context.ALARM_SERVICE;
+
+/***
+ * AlarmBaseAdapter
+ * an adapter to show the alarm item
+ * get data from the database
+ * @author Lingyu Xia
+ *
+ * @ID u6483756
+ */
 
 public class AlarmBaseAdapter extends BaseAdapter {
 

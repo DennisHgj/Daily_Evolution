@@ -1,6 +1,5 @@
 package com.example.daliyevolution.ui;
 
-import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -9,14 +8,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.widget.RadioGroup;
 
-import com.example.daliyevolution.MainActivity;
 import com.example.daliyevolution.R;
 import com.example.daliyevolution.base.BaseFragActivity;
 import com.example.daliyevolution.base.BaseFragment;
-import com.example.daliyevolution.fragment.Fragment_transaction;
 import com.example.daliyevolution.fragment.Fragment_home;
 import com.example.daliyevolution.fragment.Fragment_notebook;
 import com.example.daliyevolution.fragment.Fragment_time;
+import com.example.daliyevolution.fragment.Fragment_transaction;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
@@ -29,6 +27,8 @@ import java.util.List;
  * main activity, used to implement fragment transfer
  * @author Guanjie Huang
  * @ID u6532079
+ *
+ * @ID u6483756
  */
 @ContentView(R.layout.activity_main)
 public class Activity_main extends BaseFragActivity {
@@ -55,6 +55,7 @@ public class Activity_main extends BaseFragActivity {
             transaction.show(mContent).commit();
         }
     }
+
 
     private void initFragment() {
         fragment_list = new ArrayList<>();
@@ -129,7 +130,6 @@ public class Activity_main extends BaseFragActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        System.out.println("6666666" + requestCode + "66666" + resultCode);
         if (requestCode == 1) {
             mContent = new Fragment_time();
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -137,6 +137,7 @@ public class Activity_main extends BaseFragActivity {
             transaction.show(mContent).commit();
         }
     }
+
 }
 
 
