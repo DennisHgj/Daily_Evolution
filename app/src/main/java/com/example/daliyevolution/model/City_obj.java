@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
  * city_obj
  * give a default city to form the url and request weather info when start the app
  * receive a input city to form a new url and request weather info
+ * the info is and will not be stored in the database
  * @author Lingyu Xia
  *
  * @ID u6483756
