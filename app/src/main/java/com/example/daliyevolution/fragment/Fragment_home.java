@@ -162,6 +162,8 @@ public class Fragment_home extends BaseFragment {
         } else {
             //set icon for different kinds of weather
             switch(id) {
+                case 0 : icon = getActivity().getString(R.string.weather_sunny);
+                    break;
                 case 2 : icon = getActivity().getString(R.string.weather_thunder);
                     break;
                 case 3 : icon = getActivity().getString(R.string.weather_drizzle);
