@@ -8,6 +8,6 @@ He is responsible for writing the frame of the program, implementing the functio
 Chao Zhang is note taker, documentation checker, user input, coder.
 Chao Zhang has to record contents of each meeting, check the documents of our program and implement partial functions of the app.
 Lingyu Xia is coder,tester. He would implement functions of alarm and weather report within the app.
-He would also test functions of our app. )
+He would also test functions of our app. )  
 
 
