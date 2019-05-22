@@ -89,7 +89,7 @@ public class Fragment_transaction extends BaseFragment {
             }
             if (data.getStringExtra("isType") != null) {
                 segmentedGroup.check(R.id.bt_detail);
-                i = 5;
+                i = 0;
             }
         }
     }
