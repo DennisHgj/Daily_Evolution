@@ -33,8 +33,8 @@ import static android.content.Context.ALARM_SERVICE;
  * Fragment_time
  * show all the alarm that is stored in the database
  * access to add a new alarm
- * @author Lingyu Xia
- *
+ * @author Lingyu Xia, Chao Zhang
+ * @ID u6545192
  * @ID u6483756
  */
 public class Fragment_time extends BaseFragment {
@@ -44,9 +44,9 @@ public class Fragment_time extends BaseFragment {
     private DbManager db = x.getDb(daoConfig);
     private ListView alarm_list;
     private ArrayList<Object[]> al = new ArrayList<>();// store the info of alarm from the database
-    int hour_of_day;
-    int minute;
-    int id;
+    public int hour_of_day;
+    public int minute;
+    public int id;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -54,7 +54,7 @@ public class Fragment_time extends BaseFragment {
         alarm_list = (ListView) view.findViewById(R.id.alarm_list);
         AlarmManager alarm = (AlarmManager) getContext().getSystemService(ALARM_SERVICE);
         try {
-            String sql = "select * from Tb_alarm";
+            String sql = "SELECT * FROM Tb_alarm;";
             Cursor cursor = db.execQuery(sql);
             // find and store all alarm from the database
             if(cursor.moveToFirst()){
