@@ -24,13 +24,7 @@ import java.util.Calendar;
  */
 public class AlarmActivity extends AppCompatActivity {
 
-    private Button set = null;
-    private TimePicker time = null;
-    private int hourOfDay = 0; // store the hour of alarm we choose
-    private int minute = 0; // store the minute of alarm we choose
-    private Calendar calendar = Calendar.getInstance();
-    private DbManager.DaoConfig daoConfig = Db_config.getDaoConfig();
-    private DbManager db = x.getDb(daoConfig);
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
