@@ -40,8 +40,9 @@ import info.hoang8f.android.segmented.SegmentedGroup;
 /***
  * Fragment_transaction
  * transaction part basic activities
- * @Author Guanjie Huang
+ * @Author Guanjie Huang, Chao Zhang
  * @ID u6532079
+ * @ID u6545192
  */
 
 
@@ -53,7 +54,6 @@ public class Fragment_transaction extends BaseFragment {
     private SegmentedGroup segmentedGroup;
     private ListView listview_money;
     private LinearLayout line_add;
-
     private List<List<Tb_transaction>> list_money;
     private Adapter_transaction adapter_transaction;
     private String nowDate;//Current date
@@ -74,7 +74,6 @@ public class Fragment_transaction extends BaseFragment {
         dateOnclick();
         segmentSetListener();
         addOnclick();
-
         return view;
     }
 
@@ -90,7 +89,7 @@ public class Fragment_transaction extends BaseFragment {
             }
             if (data.getStringExtra("isType") != null) {
                 segmentedGroup.check(R.id.bt_detail);
-                i = 0;
+                i = 5;
             }
         }
     }
