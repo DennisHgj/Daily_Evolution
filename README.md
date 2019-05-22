@@ -28,7 +28,12 @@ I Chao Zhang declare that everything I have submitted in this
 assignment is entirely my own work, with exceptions given below.
 
 I Lingyu Xia declare that everything I have submitted in this
-assignment is entirely my own work, with exceptions given below.
+assignment is entirely my own work, with exceptions given below:
+
+    The idea and some code is studied from internet, retrived from :
+    https://code.tutsplus.com/tutorials/create-a-weather-app-on-android--cms-21587
+
+    The ui was directly used since it is a good design
 
 ### Inspiration
 
