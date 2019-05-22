@@ -22,7 +22,7 @@ public class AlarmMessage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         new AlertDialog.Builder(this)//show the dialog
                 .setTitle("Time is up！")
-                .setMessage("Ring Ring Ring !!!：")
+                .setMessage(" Do it now!")
                 .setPositiveButton("Close", new DialogInterface.OnClickListener() {
 
                     @Override
