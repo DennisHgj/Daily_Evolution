@@ -29,9 +29,9 @@ import java.util.Locale;
 /***
  * Fragment_home
  * home fragment
- * @author Guanjie Huang(initial build), Lingyu Xia(main developer)
+ * @author Guanjie Huang(initial build), Lingyu Xia(main developer), Chao Zhang(developer and checker)
  * @ID u6532079
- *
+ * @ID u6545192
  * @ID u6483756
  */
 public class Fragment_home extends BaseFragment {
