@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 
+import com.example.daliyevolution.util.Datas;
+
 import java.util.ArrayList;
 
 /***
@@ -17,7 +19,7 @@ import java.util.ArrayList;
  */
 
 public class MainActivity extends AppCompatActivity {
-    ArrayList<String> entries=Datas.datas;
+    ArrayList<String> entries= Datas.datas;
     ArrayAdapter<String> adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onPress(View v){
-        EditText txt= findViewById(R.id.editText);
+        EditText txt= (EditText)findViewById(R.id.editText);
         txt.setText("");
     }
 }
