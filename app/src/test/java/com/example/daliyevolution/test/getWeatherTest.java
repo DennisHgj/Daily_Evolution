@@ -5,7 +5,13 @@ import com.example.daliyevolution.util.getWeather;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotNull;
-
+/***
+ * Noteactivity
+ *  activity
+ * @author  Chao Zhang
+ *
+ * @ID u6545192
+ */
 public class getWeatherTest {
 
     @Test

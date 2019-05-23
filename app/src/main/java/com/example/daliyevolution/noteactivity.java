@@ -9,7 +9,7 @@ import android.widget.EditText;
  * Noteactivity
  *  activity
  * @author  Chao Zhang
- * 
+ *
  * @ID u6545192
  */
 
