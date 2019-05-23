@@ -63,15 +63,15 @@
             android:configChanges="orientation|screenSize|keyboardHidden"></activity>
 
         <activity
-            android:name=".AlarmActivity"
+            android:name=".ui.AlarmActivity"
             android:label="@string/app_name" />
 
         <activity
-            android:name=".AlarmMessage"
+            android:name=".ui.AlarmMessage"
             android:label="@string/app_name" />
 
         <receiver
-            android:name=".AlarmReceiver"
+            android:name=".ui.AlarmReceiver"
             android:enabled="true"
             android:process=":remote"
             android:exported="true">

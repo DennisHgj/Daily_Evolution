@@ -1,12 +1,10 @@
-package com.example.daliyevolution;
+package com.example.daliyevolution.ui;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-
-import com.example.daliyevolution.ui.Activity_main;
 
 /***
  * AlarmMessage
