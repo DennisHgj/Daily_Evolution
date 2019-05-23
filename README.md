@@ -42,7 +42,6 @@ assignment is entirely my own work, with exceptions given below:
 
     Lingyu Xia: The idea and some code is studied from internet, retrived from :
     https://code.tutsplus.com/tutorials/create-a-weather-app-on-android--cms-21587
-
     The ui was directly used since it is a good design
 
 ### Assets 
