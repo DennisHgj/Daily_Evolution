@@ -27,8 +27,6 @@ import java.util.List;
  * main activity, used to implement fragment transfer
  * @author Guanjie Huang
  * @ID u6532079
- *
- * @ID u6483756
  */
 @ContentView(R.layout.activity_main)
 public class Activity_main extends BaseFragActivity {

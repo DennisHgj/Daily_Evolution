@@ -40,8 +40,9 @@ import info.hoang8f.android.segmented.SegmentedGroup;
 /***
  * Fragment_transaction
  * transaction part basic activities
- * @Author Guanjie Huang, Chao Zhang
+ * @author Guanjie Huang
  * @ID u6532079
+ * @Check&Modify Chao Zhang
  * @ID u6545192
  */
 
