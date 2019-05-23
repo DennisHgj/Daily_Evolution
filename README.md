@@ -37,7 +37,11 @@ assignment is entirely my own work, with exceptions given below:
 
 ### Inspiration
 
-_add references from where you obtained the idea form the app and ideas about aspects of the app_
+    Lingyu Xia: The idea and some code is studied from internet, retrived from :
+    https://code.tutsplus.com/tutorials/create-a-weather-app-on-android--cms-21587
+
+    The ui was directly used since it is a good design
+
 
 ### Code
 
