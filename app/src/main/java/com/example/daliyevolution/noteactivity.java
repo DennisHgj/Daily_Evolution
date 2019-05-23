@@ -20,12 +20,12 @@ public class noteactivity extends AppCompatActivity {
     }
     // clear button
     public void onClick(View v){
-        EditText txt= findViewById(R.id.editText);
+        EditText txt= (EditText) findViewById(R.id.editText);
         txt.setText("");
     }
     //add button
     public void add(View v){
-        EditText txt= findViewById(R.id.editText);
+        EditText txt= (EditText) findViewById(R.id.editText);
         Intent intent= new Intent(this,MainActivity.class);
         intent.putExtra("String",txt.getText().toString());
         startActivity(intent);
