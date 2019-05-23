@@ -11,5 +11,9 @@ public class getWeatherTest {
     @Test
     public void getJSON() {
         assertNotNull(getWeather.getJSON("Canberra"));
+        assertNotNull(getWeather.getJSON("Sydney"));
+        assertNotNull(getWeather.getJSON("Melbourne"));
+        assertNotNull(getWeather.getJSON("Adelaide"));
+
     }
 }
