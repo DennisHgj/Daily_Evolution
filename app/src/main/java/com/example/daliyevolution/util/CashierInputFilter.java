@@ -18,7 +18,7 @@ public class CashierInputFilter implements InputFilter{
     //Input MAX
     private static final int MAX_VALUE = Integer.MAX_VALUE;
     //Pointer_length
-    private static final int POINTER_LENGTH = 2;
+    private static final int POINTER_LENGTH = 3;
 
     private static final String POINTER = ".";
 

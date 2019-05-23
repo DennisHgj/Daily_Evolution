@@ -29,9 +29,9 @@ import java.util.Locale;
 /***
  * Fragment_home
  * home fragment
- * @author Guanjie Huang(initial build), Lingyu Xia(main developer)
+ * @author Guanjie Huang(initial build), Lingyu Xia(main developer), Chao Zhang(developer and checker)
  * @ID u6532079
- *
+ * @ID u6545192
  * @ID u6483756
  */
 public class Fragment_home extends BaseFragment {
@@ -162,6 +162,8 @@ public class Fragment_home extends BaseFragment {
         } else {
             //set icon for different kinds of weather
             switch(id) {
+                case 0 : icon = getActivity().getString(R.string.weather_sunny);
+                    break;
                 case 2 : icon = getActivity().getString(R.string.weather_thunder);
                     break;
                 case 3 : icon = getActivity().getString(R.string.weather_drizzle);

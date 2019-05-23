@@ -40,8 +40,9 @@ import info.hoang8f.android.segmented.SegmentedGroup;
 /***
  * Fragment_transaction
  * transaction part basic activities
- * @Author Guanjie Huang
+ * @Author Guanjie Huang, Chao Zhang
  * @ID u6532079
+ * @ID u6545192
  */
 
 
@@ -53,7 +54,6 @@ public class Fragment_transaction extends BaseFragment {
     private SegmentedGroup segmentedGroup;
     private ListView listview_money;
     private LinearLayout line_add;
-
     private List<List<Tb_transaction>> list_money;
     private Adapter_transaction adapter_transaction;
     private String nowDate;//Current date
@@ -74,7 +74,6 @@ public class Fragment_transaction extends BaseFragment {
         dateOnclick();
         segmentSetListener();
         addOnclick();
-
         return view;
     }
 
@@ -121,7 +120,7 @@ public class Fragment_transaction extends BaseFragment {
     private List<List<Tb_transaction>> getMyDate(String myDate) {
 
         List<List<Tb_transaction>> list_money = new ArrayList<List<Tb_transaction>>();
-        for (int i = 1; i <= 31; i++) {
+        for (int i = 1; i < 32; i++) {
             String date = myDate + "-" + String.format("%02d", i);
             try {
                 List<Tb_transaction> list_money_item = db.selector(Tb_transaction.class).where("time", "=", date).findAll();
@@ -155,8 +154,8 @@ public class Fragment_transaction extends BaseFragment {
         //Show total income and spending in this month
         String str_in = Double.toString(inTotal);
         String str_out = Double.toString(outTotal);
-        tv_money_in.setText("Income:" + str_in.substring(0, str_in.indexOf(".") + 2));
-        tv_money_out.setText("Spend:" + str_out.substring(0, str_out.indexOf(".") + 2));
+        tv_money_in.setText("Income:" + str_in.substring(0, str_in.indexOf(".") +2));
+        tv_money_out.setText("Spend:" + str_out.substring(0, str_out.indexOf(".") +2));
     }
 
     private void dateOnclick() {
@@ -173,9 +172,9 @@ public class Fragment_transaction extends BaseFragment {
                 //date
                 AlertDialog.Builder alert = new AlertDialog.Builder(context);
                 alert.setView(view);
-                alert.setTitle("Please choose a date");
+                alert.setTitle("Please choose a date.");
                 alert.setCancelable(false);
-                alert.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
+                alert.setPositiveButton(" Confirm", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         int year = datePicker.getYear();

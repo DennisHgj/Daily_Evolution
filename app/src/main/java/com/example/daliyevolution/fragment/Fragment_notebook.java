@@ -29,19 +29,21 @@ import java.util.List;
 /***
  * fragment_notebook
  * notebook fragment
- * @author Guanjie Huang
+ * @author Guanjie Huang, Chao Zhang
  * @ID u6532079
+ * @ID u6545192
+ *
  */
 public class Fragment_notebook extends BaseFragment {
-    private TextView tv_add;
-    private TextView tv_clear;
-    private ListView notebook_listview;
+    public TextView tv_add;
+    public TextView tv_clear;
+    public ListView notebook_listview;
 
-    private List<Tb_notebook> list_notebook;
-    private Adapter_notebook adapter_notebook;
+    public List<Tb_notebook> list_notebook;
+    public Adapter_notebook adapter_notebook;
 
-    private DbManager.DaoConfig daoConfig = Db_config.getDaoConfig();
-    private DbManager db = x.getDb(daoConfig);
+    public DbManager.DaoConfig daoConfig = Db_config.getDaoConfig();
+    public DbManager db = x.getDb(daoConfig);
 
     @Nullable
     @Override
@@ -139,7 +141,7 @@ public class Fragment_notebook extends BaseFragment {
             public void onClick(View v) {
                 try {
                     db.delete(Tb_notebook.class);
-                    Toast.makeText(context, "clear success", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "cleared ", Toast.LENGTH_SHORT).show();
                     list_notebook.clear();
                     adapter_notebook.notifyDataSetChanged();
                 } catch (DbException e) {
