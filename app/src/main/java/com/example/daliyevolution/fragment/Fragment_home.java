@@ -92,7 +92,7 @@ public class Fragment_home extends BaseFragment {
     private void updateWeatherData(final String city){
         new Thread(){
             public void run(){
-                final JSONObject json = getWeather.getJSON(getContext(), city);
+                final JSONObject json = getWeather.getJSON(city);
                 if(json == null){
                     // give a toast if json object is null
                     handler.post(new Runnable(){

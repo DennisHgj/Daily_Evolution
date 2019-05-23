@@ -1,4 +1,4 @@
-package com.example.daliyevolution;
+package com.example.daliyevolution.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,8 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import com.example.daliyevolution.R;
 import com.example.daliyevolution.model.Tb_alarm;
-import com.example.daliyevolution.ui.Activity_main;
 import com.example.daliyevolution.util.Db_config;
 
 import org.xutils.DbManager;

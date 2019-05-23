@@ -1,10 +1,7 @@
 package com.example.daliyevolution.fragment;
 
-import android.app.AlarmManager;
-import android.app.PendingIntent;
 import android.content.Intent;
 import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -13,11 +10,10 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.daliyevolution.AlarmActivity;
-import com.example.daliyevolution.AlarmReceiver;
 import com.example.daliyevolution.R;
-import com.example.daliyevolution.base.AlarmBaseAdapter;
 import com.example.daliyevolution.base.BaseFragment;
+import com.example.daliyevolution.function.AlarmBaseAdapter;
+import com.example.daliyevolution.ui.AlarmActivity;
 import com.example.daliyevolution.util.Db_config;
 
 import org.xutils.DbManager;
@@ -25,9 +21,6 @@ import org.xutils.ex.DbException;
 import org.xutils.x;
 
 import java.util.ArrayList;
-import java.util.Calendar;
-
-import static android.content.Context.ALARM_SERVICE;
 
 /***
  * Fragment_time
@@ -38,7 +31,7 @@ import static android.content.Context.ALARM_SERVICE;
  * @ID u6483756
  */
 public class Fragment_time extends BaseFragment {
-    private Calendar calendar = Calendar.getInstance();
+
     private TextView tx;
     private DbManager.DaoConfig daoConfig = Db_config.getDaoConfig();
     private DbManager db = x.getDb(daoConfig);
@@ -52,7 +45,8 @@ public class Fragment_time extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_alarm, container, false);
         alarm_list = (ListView) view.findViewById(R.id.alarm_list);
-        AlarmManager alarm = (AlarmManager) getContext().getSystemService(ALARM_SERVICE);
+        al.clear();
+
         try {
             String sql = "SELECT * FROM Tb_alarm;";
             Cursor cursor = db.execQuery(sql);
@@ -64,27 +58,8 @@ public class Fragment_time extends BaseFragment {
                     hour_of_day = cursor.getInt(1);
                     minute = cursor.getInt(2);
 
-                    // generate the alarm when get the data from database -> can be passed as a parameter
-                    calendar.setTimeInMillis(System.currentTimeMillis()) ;
-                    calendar.set(Calendar.HOUR_OF_DAY, hour_of_day) ;
-                    calendar.set(Calendar.MINUTE, minute) ;
-                    calendar.set(Calendar.SECOND, 0) ;
-                    calendar.set(Calendar.MILLISECOND, 0) ;
-
-                    Intent intent = new Intent(getContext(), AlarmReceiver.class);
-                    intent.setAction("setalarm");// set the action for brosadcast
-                    intent.setData(Uri.parse("content://calendar/calendar_alerts/1" + id));
-
-                    PendingIntent sender = PendingIntent.getBroadcast(
-                            getContext(), 0, intent,
-                            PendingIntent.FLAG_UPDATE_CURRENT);
-                    // wake the alarm when the time matches
-
-                    alarm.setRepeating(AlarmManager.RTC_WAKEUP,
-                            calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, sender);//activate the alarm clock when time is up
-
                     //give the alarm info to adapter and implement function of cancel alarm
-                    Object[] s = new Object[]{id, hour_of_day, minute, sender};
+                    Object[] s = new Object[]{id, hour_of_day, minute};
                     al.add(s);
                 }
                 cursor.close();

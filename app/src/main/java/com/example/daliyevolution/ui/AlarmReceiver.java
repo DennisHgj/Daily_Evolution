@@ -1,10 +1,8 @@
-package com.example.daliyevolution;
+package com.example.daliyevolution.ui;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-
-import com.example.daliyevolution.ui.Activity_main;
 
 /***
  * AlarmReceiver
@@ -19,7 +17,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-
+        System.out.println(intent.getAction());
         if (intent.getAction().equals("deleteAlarm")) {
             // the action is to delete an alarm from database
             // go back to the fragment_alarm.xml after deleting
