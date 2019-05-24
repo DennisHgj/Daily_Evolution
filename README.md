@@ -56,13 +56,6 @@ assignment is entirely my own work, with exceptions given below:
 
         The movable view used source from https://jitpack.io/p/YuanWenHai/MovableView
 
-
-
-
-
-
-
-
     Lingyu Xia:
         The idea and some code is studied from internet, retrieved from :
         https://code.tutsplus.com/tutorials/create-a-weather-app-on-android--cms-21587
