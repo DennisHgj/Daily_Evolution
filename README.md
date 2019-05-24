@@ -43,21 +43,17 @@ assignment is entirely my own work, with exceptions given below:
 ### Code
 
     Guanjie Huang:
-        The pie chart using in transaction function is retrieved from :
-        https://github.com/PhilJay/MPAndroidChart
-        This is a mature chart control
-
-        The logger part used sources from https://github.com/orhanobut/logger
-
-        The database part used sources retrieved from https://github.com/wyouflf/xUtils3
-
-        The segment change control in transaction function using sources retrieved
+        * The pie chart using in transaction function is retrieved from :
+          https://github.com/PhilJay/MPAndroidChart
+          This is a mature chart control
+        * The logger part used sources from https://github.com/orhanobut/logger
+        * The database part used sources retrieved from https://github.com/wyouflf/xUtils3
+        * The segment change control in transaction function using sources retrieved
         from https://github.com/Kaopiz/android-segmented-control
-
-        The movable view used source from https://jitpack.io/p/YuanWenHai/MovableView
+        * The movable view used source from https://jitpack.io/p/YuanWenHai/MovableView
 
     Lingyu Xia:
-        The idea and some code is studied from internet, retrieved from :
+        * The idea and some code is studied from internet, retrieved from :
         https://code.tutsplus.com/tutorials/create-a-weather-app-on-android--cms-21587
         The ui was directly used since it is a good design
 
