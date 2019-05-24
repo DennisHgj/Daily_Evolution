@@ -7,7 +7,7 @@
 
 ## App Overview 
 
-_Add a paragraph the gives a summary of the app you implemented. Include a small screen shot here._
+[App Overview Summary](https://gitlab.cecs.anu.edu.au/u6532079/assignapp2019s1/wikis/Overview-summary)
 
 ## Design Documentation 
 + [Design Summary](https://gitlab.cecs.anu.edu.au/u6532079/assignapp2019s1/wikis/designsummary)
