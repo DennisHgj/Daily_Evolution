@@ -1,19 +1,21 @@
 package com.example.daliyevolution.ui;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.example.daliyevolution.R;
+import com.example.daliyevolution.base.BaseActivity;
 import com.example.daliyevolution.model.Tb_alarm;
 import com.example.daliyevolution.util.Db_config;
 
 import org.xutils.DbManager;
 import org.xutils.x;
+
 import java.util.Calendar;
 
 /***
@@ -23,7 +25,7 @@ import java.util.Calendar;
  *
  * @ID u6483756
  */
-public class AlarmActivity extends AppCompatActivity {
+public class AlarmActivity extends BaseActivity {
     public Button set = null;
     public TimePicker time = null;
     public int hourOfDay = 0; // store the hour of alarm we choose
@@ -69,10 +71,7 @@ public class AlarmActivity extends AppCompatActivity {
                 db.save(ta);
 
                 //jump to the fragment_time after adding a new alarm, adding an id to specify the fragment
-                Intent intent1 = new Intent(AlarmActivity.this, Activity_main.class);
-                intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                intent1.putExtra("id", 1);
-                startActivity(intent1);
+
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -80,6 +79,11 @@ public class AlarmActivity extends AppCompatActivity {
 
             Toast.makeText(AlarmActivity.this, "new alarm added！",
                     Toast.LENGTH_LONG).show();
+
+            Intent intent = new Intent();
+            intent.putExtra("isClear", "1");
+            setResult(Activity.RESULT_OK, intent);
+            finish();
         }
 
     }

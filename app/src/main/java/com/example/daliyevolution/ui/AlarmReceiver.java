@@ -22,7 +22,6 @@ public class AlarmReceiver extends BroadcastReceiver {
             // the action is to delete an alarm from database
             // go back to the fragment_alarm.xml after deleting
             Intent intent1 = new Intent(context, Activity_main.class);
-            intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             intent1.putExtra("id", 1); // pass an id to specify the fragment we are going to
             context.startActivity(intent1);
         } else {

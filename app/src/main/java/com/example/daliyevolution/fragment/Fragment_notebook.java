@@ -64,6 +64,7 @@ public class Fragment_notebook extends BaseFragment {
             return;
         } else {
             if (data.getStringExtra("isClear") != null) {
+                System.out.println("extra string got");
                 refreshListView();
             }
         }

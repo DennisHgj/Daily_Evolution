@@ -8,7 +8,13 @@ import android.content.Intent;
 import com.example.daliyevolution.ui.AlarmReceiver;
 
 import java.util.Calendar;
-
+/***
+ * MyAlarmManager
+ * use to create and cancel an alarm
+ * @author Lingyu Xia
+ *
+ * @ID u6483756
+ */
 public class MyAlarmManager {
 
     private static MyAlarmManager mInstance = null;

@@ -1,6 +1,5 @@
 package com.example.daliyevolution.ui;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
@@ -125,17 +124,6 @@ public class Activity_main extends BaseFragActivity {
                     transaction.show(to).commit();
                 }
             }
-        }
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 1) {
-            mContent = new Fragment_time();
-            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.replace(R.id.fl_content, mContent);
-            transaction.show(mContent).commit();
         }
     }
 

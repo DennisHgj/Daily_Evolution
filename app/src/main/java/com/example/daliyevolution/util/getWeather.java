@@ -24,7 +24,6 @@ public class getWeather {
             // form the url with the parameter city, append client key to have access to the website
             String url_str = OPEN_WEATHER_MAP_API + city + "&units=metric&APPID=dea7f272232070515f23e7d01c0ada76";
             URL url = new URL(url_str);
-            System.out.println(url);
 
             // open the connection
             HttpURLConnection connection = (HttpURLConnection)url.openConnection();
