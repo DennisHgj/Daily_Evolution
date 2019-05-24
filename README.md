@@ -7,7 +7,7 @@
 
 ## App Overview 
 
-_Add a paragraph the gives a summary of the app you implemented. Include a small screen shot here._
+[App Overview Summary](https://gitlab.cecs.anu.edu.au/u6532079/assignapp2019s1/wikis/Overview-summary)
 
 ## Design Documentation 
 + [Design Summary](https://gitlab.cecs.anu.edu.au/u6532079/assignapp2019s1/wikis/designsummary)
@@ -30,18 +30,19 @@ assignment is entirely my own work, with exceptions given below.
 I Lingyu Xia declare that everything I have submitted in this
 assignment is entirely my own work, with exceptions given below:
 
-    The idea and some code is studied from internet, retrived from :
-    https://code.tutsplus.com/tutorials/create-a-weather-app-on-android--cms-21587
-
-    The ui was directly used since it is a good design
 
 ### Inspiration
 
-_add references from where you obtained the idea form the app and ideas about aspects of the app_
+    Lingyu Xia: The idea and some code is studied from internet, retrived from :
+    https://code.tutsplus.com/tutorials/create-a-weather-app-on-android--cms-21587
+    The ui was directly used since it is a good design
+
 
 ### Code
 
-_reference all the code or ideas for code from other sources_
+    Lingyu Xia: The idea and some code is studied from internet, retrived from :
+    https://code.tutsplus.com/tutorials/create-a-weather-app-on-android--cms-21587
+    The ui was directly used since it is a good design
 
 ### Assets 
 
