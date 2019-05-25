@@ -22,7 +22,6 @@ public class AlarmCancelMessage extends BaseActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(AlarmCancelMessage.this, Fragment_time.class);
-                        intent.putExtra("isClear", "delete");
                         setResult(Activity.RESULT_OK, intent);
                         finish();
                     }

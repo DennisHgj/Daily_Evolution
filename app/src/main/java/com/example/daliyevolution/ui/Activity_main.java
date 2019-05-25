@@ -44,14 +44,6 @@ public class Activity_main extends BaseFragActivity {
         initFragment();
         setListener();
 
-        int id = getIntent().getIntExtra( "id" , 0);
-        if (id == 1) {
-            mContent = new Fragment_time();
-            position = 1;
-            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.replace(R.id.fl_content, mContent);
-            transaction.show(mContent).commit();
-        }
     }
 
 
