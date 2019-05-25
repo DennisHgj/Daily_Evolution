@@ -35,8 +35,7 @@ public class MyAlarmManager {
     public void setNextSyncTime(Context context, int id, Calendar calendar) {
 
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(context, AlarmReceiver.class);
-        intent.setAction("setalarm");
+        Intent intent = new Intent("setalarm");
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, id, intent, 0);
 
         alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,
@@ -45,8 +44,7 @@ public class MyAlarmManager {
 
     public void cancel(Context context, int id) {
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(context, AlarmReceiver.class);
-        intent.setAction("setalarm");
+        Intent intent = new Intent("setalarm");
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, id, intent, 0);
 
         alarmManager.cancel(pendingIntent);

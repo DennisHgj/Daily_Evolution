@@ -7,8 +7,10 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.example.daliyevolution.R;
@@ -62,6 +64,13 @@ public class Fragment_time extends BaseFragment {
         return view;
     }
 
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        refreshListView();
+    }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -99,8 +108,8 @@ public class Fragment_time extends BaseFragment {
             if (myList == null) {
                 myList = new ArrayList<>();
             }
-            for (Tb_alarm tb_diary : myList) {
-                list_alarm.add(tb_diary);
+            for (Tb_alarm tb_alarm : myList) {
+                list_alarm.add(tb_alarm);
             }
         } catch (DbException e) {
             e.printStackTrace();

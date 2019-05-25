@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.daliyevolution.R;
 import com.example.daliyevolution.model.Tb_alarm;
+import com.example.daliyevolution.ui.AlarmCancelMessage;
 import com.example.daliyevolution.util.Db_config;
 import com.example.daliyevolution.util.MyAlarmManager;
 
@@ -85,13 +86,11 @@ public class AlarmBaseAdapter extends ArrayAdapter<Tb_alarm> {
                         // delete the alarm info from the database
                         String sql = "delete from Tb_alarm where id = " + tb_alarm.getId();
                         db.executeUpdateDelete(sql);
-                        System.out.println(tb_alarm.getMinute());
 
                         myAlarmManager.cancel(mContext, tb_alarm.getId());
 
-                        Intent intent = new Intent();
-                        intent.setAction("deleteAlarm");
-                        mContext.sendBroadcast(intent);
+                        Intent intent = new Intent(mContext, AlarmCancelMessage.class);
+                        mContext.startActivity(intent);
 
                     } catch (DbException e) {
                         e.printStackTrace();
