@@ -1,9 +1,9 @@
 # App - Daily Evolution
 
 ## Team structure and roles 
-+ Guanjie Huang (Dennis) u6532079 - team leader, main coder
-+ Lingyu Xia u6483756 - coder,tester
-+ Chao Zhang u6545192 - note taker, documentation checker, user input, coder
++ Guanjie Huang (Dennis)  - team leader, main coder
++ Lingyu Xia - coder,tester
++ Chao Zhang - note taker, documentation checker, user input, coder
 
 ## App Overview 
 
