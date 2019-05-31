@@ -9,16 +9,6 @@
 
 [App Overview Summary](https://gitlab.cecs.anu.edu.au/u6532079/assignapp2019s1/wikis/Overview-summary)
 
-## Design Documentation 
-+ [Design Summary](https://gitlab.cecs.anu.edu.au/u6532079/assignapp2019s1/wikis/designsummary)
-+ [Testing Summary](https://gitlab.cecs.anu.edu.au/u6532079/assignapp2019s1/wikis/testingsummary)
-
-## Minuted Meetings
-+ [Meeting 1 - date - decide team structure and app](https://gitlab.cecs.anu.edu.au/u6532079/assignapp2019s1/wikis/meeting1)
-+ [Meeting 2 - date - divide up tasks](https://gitlab.cecs.anu.edu.au/u6532079/assignapp2019s1/wikis/meeting2)
-+ [Meeting 3 - date - consider and plan extension aspects](https://gitlab.cecs.anu.edu.au/u6532079/assignapp2019s1/wikis/meeting3)
-+ [Meeting 4 - date - review and practice demo](https://gitlab.cecs.anu.edu.au/u6532079/assignapp2019s1/wikis/meeting4)
-
 ## Statement of Originality
 
 I Guanjie Huang declare that everything I have submitted in this
